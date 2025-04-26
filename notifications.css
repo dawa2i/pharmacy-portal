@@ -1,0 +1,63 @@
+.notifications-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+}
+
+.notification-item {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+.notification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.notification-title {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.notification-menu {
+    color: #666;
+}
+
+.notification-message {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.notification-image {
+    margin: 10px 0;
+}
+
+.notification-image img {
+    max-width: 100px;
+    height: auto;
+}
+
+.notification-expiration {
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Add green button at bottom */
+.leave-note-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}

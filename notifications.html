@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rappel de médicaments</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="notifications.css">
+</head>
+<body>
+    <div class="notifications-container">
+        <div class="notifications-header">
+            <h2><i class="fas fa-bell"></i> Rappel de médicaments</h2>
+        </div>
+        <div class="notifications-list" id="notificationsList">
+            <div class="notification-item" data-id="1">
+                <div class="notification-content">
+                    <div class="notification-header">
+                        <div class="notification-title"></div>
+                        <div class="notification-menu">...</div>
+                    </div>
+                    <div class="notification-message"></div>
+                    <div class="notification-image">
+                        <img src="./images/antibiotiques.jpg" alt="Clamoxyl">
+                    </div>
+                    <div class="notification-expiration"></div>
+                </div>
+            </div>
+            <div class="notification-item" data-id="2">
+                <div class="notification-content">
+                    <div class="notification-header">
+                        <div class="notification-title"></div>
+                        <div class="notification-menu">...</div>
+                    </div>
+                    <div class="notification-message"></div>
+                    <div class="notification-image">
+                        <img src="./images/antibiotiques.jpg" alt="Augmentin">
+                    </div>
+                    <div class="notification-expiration"></div>
+                </div>
+            </div>
+        </div>
+        <button class="leave-note-btn">Laisser une note pour le pharmacien</button>
+    </div>
+    <script src="notifications.js"></script>
+</body>
+</html>

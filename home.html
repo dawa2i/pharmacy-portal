@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Portail Pharmacie</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" placeholder="Rechercher une pharmacie..." id="searchBar">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <!-- Search Results -->
+        <div id="searchResults" class="search-results" style="display: none;">
+            <div class="pharmacy-result">
+                <a href="pharmacie-alpha.html" class="pharmacy-link">
+                    <img src="images/pharmacie.jpg" alt="Pharmacie Alpha" class="pharmacy-image">
+                    <div class="pharmacy-info">
+                        <h3>Pharmacie Alpha</h3>
+                        <p>123 Rue Example, Ville</p>
+                    </div>
+                </a>
+                <div class="pharmacy-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000!2d-0.1276!3d51.5074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM0DCsDEyJzM0LjQiTiAwwrAxMic0My4yIlc!5e0!3m2!1sen!2suk!4v1234567890!5m2!1sen!2suk" 
+                        width="100%" 
+                        height="200" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pills Navigation -->
+        <div class="pills-nav">
+            <button class="pill active">Ouvert</button>
+            <button class="pill">Favoris</button>
+            <button class="pill">En Garde</button>
+        </div>
+
+        <!-- Image Carousel -->
+        <div class="image-carousel">
+            <div class="carousel-content">
+                <div class="carousel-slide">
+                    <img src="images/promo1.jpg" alt="Promotion 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/promo2.jpg" alt="Promotion 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/promo3.jpg" alt="Promotion 3">
+                </div>
+            </div>
+            <button class="carousel-btn prev-btn" aria-label="Previous slide">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn next-btn" aria-label="Next slide">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <!-- Categories Section -->
+        <section class="categories-section">
+            <h2>Catégories</h2>
+            <div class="categories-grid">
+                <div class="category-pill">
+                    <img src="images/hygiene-buccale.jpg" alt="Hygiène Buccale">
+                    <span>Hygiène Buccale</span>
+                </div>
+                <div class="category-pill">
+                    <img src="images/relaxation.jpg" alt="Relaxation et Sommeil">
+                    <span>Relaxation et Sommeil</span>
+                </div>
+                <div class="category-pill">
+                    <img src="images/skincare.jpg" alt="Skincare et Capillaire">
+                    <span>Skincare et Capillaire</span>
+                </div>
+                <div class="category-pill">
+                    <img src="images/minceur.jpg" alt="Régime et Minceur">
+                    <span>Régime et Minceur</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nutritionists Section -->
+        <section class="nutritionists-section">
+            <h2>Nutritionnistes et Coachs</h2>
+            <div class="experts-grid">
+                <div class="expert-pill">
+                    <img src="images/coach.png" alt="Coach Nour">
+                    <span>Coach Nour</span>
+                </div>
+                <div class="expert-pill">
+                    <img src="images/nutritionnist.jpg" alt="Nutritionniste">
+                    <span>Nutritionniste</span>
+                </div>
+                <div class="expert-pill">
+                    <img src="images/dr.png" alt="Dr Omar">
+                    <span>Dr Omar</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pharmacies Section -->
+        <section class="pharmacies-section">
+            <h2>Pharmacies et Magasins</h2>
+            <div class="pharmacies-grid">
+                <div class="pharmacy-card">
+                    <img src="images/pharmacie.jpg" alt="Pharmacie 1">
+                    <span>Pharmacie Centrale</span>
+                </div>
+                <div class="pharmacy-card">
+                    <img src="images/pharmacie2.jpg" alt="Pharmacie 2">
+                    <span>Pharmacie du Nord</span>
+                </div>
+                <div class="pharmacy-card">
+                    <img src="images/magasin.jpg" alt="Magasin 1">
+                    <span>Parapharmacie Plus</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Navigation -->
+        <footer class="footer-nav">
+            <button class="footer-btn active">
+                <i class="fas fa-home"></i>
+                <span>Accueil</span>
+            </button>
+            <button class="footer-btn">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Carte</span>
+            </button>
+            <button class="footer-btn">
+                <i class="fas fa-shopping-basket"></i>
+                <span>Panier</span>
+            </button>
+            <button class="footer-btn">
+                <i class="fas fa-user"></i>
+                <span>Profil</span>
+            </button>
+        </footer>
+    </div>
+
+    <script src="js/home.js"></script>
+</body>
+</html>

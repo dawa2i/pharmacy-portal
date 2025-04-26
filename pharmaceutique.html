@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmaceutique - Portail Pharmacie</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pharmaceutique.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" placeholder="Rechercher un médicament..." id="searchBar">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <!-- Pills Navigation -->
+        <div class="pills-nav">
+            <button class="pill active">Ouvert</button>
+            <button class="pill">Favoris</button>
+            <button class="pill">En Garde</button>
+        </div>
+
+        <!-- Ads Carousel -->
+        <div class="ads-carousel">
+            <div class="carousel-content">
+                <a href="#" class="ad-slide">
+                    <img src="./images/promo-generiques.jpg" alt="Promotion sur les médicaments génériques" loading="lazy">
+                    <div class="ad-caption">Promotion sur les médicaments génériques</div>
+                </a>
+                <a href="#" class="ad-slide">
+                    <img src="./images/nouveaux-produits.jpg" alt="Nouveaux produits disponibles" loading="lazy">
+                    <div class="ad-caption">Nouveaux produits disponibles</div>
+                </a>
+                <a href="#" class="ad-slide">
+                    <img src="./images/smecta.jpg" alt="Smecta" loading="lazy">
+                    <div class="ad-caption">Smecta</div>
+                </a>
+            </div>
+            <button class="carousel-btn prev-btn" aria-label="Previous slide">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn next-btn" aria-label="Next slide">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <!-- Category Buttons -->
+        <div class="category-buttons">
+            <div class="category-row">
+                <button class="round-button">
+                    <img src="./images/pharmaceutiques.jpg" alt="Médicaments" loading="lazy">
+                    <span>Médicaments</span>
+                </button>
+                <button class="round-button">
+                    <img src="./images/pharmacien.png" alt="Pharmaciens" loading="lazy">
+                    <span>Pharmaciens</span>
+                </button>
+                <button class="round-button">
+                    <img src="./images/pharmacie.jpg" alt="Pharmacies" loading="lazy">
+                    <span>Pharmacies</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Footer Navigation -->
+        <footer class="footer-nav">
+            <button class="footer-btn active">
+                <i class="fas fa-home"></i>
+                <span>Accueil</span>
+            </button>
+            <button class="footer-btn">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Carte</span>
+            </button>
+            <button class="footer-btn">
+                <i class="fas fa-shopping-basket"></i>
+                <span>Panier</span>
+            </button>
+            <button class="footer-btn">
+                <i class="fas fa-user"></i>
+                <span>Profil</span>
+            </button>
+        </footer>
+    </div>
+    <script src="js/pharmaceutique.js"></script>
+</body>
+</html>

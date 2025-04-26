@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacie Alpha - Description</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pharmacie-alpha.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Page Title -->
+        <h1 class="page-title">Pharmacie Alpha</h1>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" placeholder="Rechercher un médicament..." id="searchBar">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <!-- Pills Categories -->
+        <div class="pills-categories">
+            <div class="pill-category">
+                <img src="images/antibiotiques.jpg" alt="Antibiotiques" loading="lazy">
+                <h3>Antibiotiques</h3>
+            </div>
+            <div class="pill-category">
+                <img src="images/diabete.jpg" alt="Diabète" loading="lazy">
+                <h3>Diabète</h3>
+            </div>
+            <div class="pill-category">
+                <img src="images/comp.jpg" alt="Compléments Alimentaires" loading="lazy">
+                <h3>Compléments Alimentaires</h3>
+            </div>
+        </div>
+
+        <!-- Medicine List -->
+        <div class="medicine-list">
+            <div class="medicine-card">
+                <img src="images/Amoxicilline1000mg.jpg" alt="Amoxicilline" loading="lazy">
+                <div class="medicine-info">
+                    <h4>Amoxicilline 1000mg</h4>
+                    <p class="price">290.90 DZD</p>
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Ajouter au panier
+                    </button>
+                </div>
+            </div>
+            <div class="medicine-card">
+                <img src="images/metformine.jpg" alt="Metformine" loading="lazy">
+                <div class="medicine-info">
+                    <h4>Metformine 500mg</h4>
+                    <p class="price">450.00 DZD</p>
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Ajouter au panier
+                    </button>
+                </div>
+            </div>
+            <div class="medicine-card">
+                <img src="images/vitd3.jpg" alt="Vitamine D" loading="lazy">
+                <div class="medicine-info">
+                    <h4>Vitamine D3 1000UI</h4>
+                    <p class="price">890.50 DZD</p>
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Ajouter au panier
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Navigation -->
+        <footer class="footer-nav">
+            <button class="footer-btn active">
+                <i class="fas fa-home"></i>
+                <span>Accueil</span>
+            </button>
+            <button class="footer-btn">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Carte</span>
+            </button>
+            <button class="footer-btn">
+                <i class="fas fa-shopping-basket"></i>
+                <span>Panier</span>
+            </button>
+            <button class="footer-btn">
+                <i class="fas fa-user"></i>
+                <span>Profil</span>
+            </button>
+        </footer>
+    </div>
+    <script src="js/pharmacie-alpha.js"></script>
+</body>
+</html>
