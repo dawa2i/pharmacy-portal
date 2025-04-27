@@ -1,0 +1,122 @@
+.main-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.page-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.category-pills {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    padding: 5px 0;
+}
+
+.pill {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    background-color: #f0f0f0;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.pill.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.medication-info {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.med-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.med-text h2 {
+    color: #4CAF50;
+    margin: 0 0 10px 0;
+}
+
+.price {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.med-image img {
+    width: 100px;
+    height: auto;
+}
+
+.natural-alternative {
+    margin: 20px 0;
+}
+
+.alternative-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.alternative-content img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.note {
+    color: red;
+    font-size: 0.9em;
+    margin: 15px 0;
+}
+
+.reviews {
+    margin: 20px 0;
+}
+
+.reviewer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.reviewer-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.share-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.share-button:hover {
+    background-color: #45a049;
+}

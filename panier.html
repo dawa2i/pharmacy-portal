@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier - Portail Pharmacie</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/panier.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1 class="page-title">Mon Panier</h1>
+        
+        <div class="cart-container">
+            <div id="cart-items" class="cart-items">
+                <!-- Cart items will be dynamically inserted here -->
+            </div>
+            
+            <div class="cart-summary">
+                <div class="subtotal">
+                    <span>Sous-total:</span>
+                    <span id="subtotal-amount">0 DA</span>
+                </div>
+                <div class="delivery">
+                    <span>Livraison:</span>
+                    <span id="delivery-cost">150 DA</span>
+                </div>
+                <div class="total">
+                    <span>Total:</span>
+                    <span id="total-amount">150 DA</span>
+                </div>
+                <button id="checkout-btn" class="checkout-btn">
+                    Placer la commande
+                </button>
+            </div>
+        </div>
+
+        <!-- Footer Navigation -->
+        <footer class="footer-nav">
+            <button class="footer-btn" onclick="window.location.href='home.html'">
+                <i class="fas fa-home"></i>
+                <span>Accueil</span>
+            </button>
+            <button class="footer-btn">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Carte</span>
+            </button>
+            <button class="footer-btn active">
+                <i class="fas fa-shopping-basket"></i>
+                <span>Panier</span>
+            </button>
+            <button class="footer-btn">
+                <i class="fas fa-user"></i>
+                <span>Profil</span>
+            </button>
+        </footer>
+    </div>
+    <script src="js/panier.js"></script>
+</body>
+</html>

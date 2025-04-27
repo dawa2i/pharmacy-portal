@@ -1,0 +1,178 @@
+.main-container {
+    padding: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.page-title {
+    text-align: center;
+    color: #333;
+    margin: 0 0 24px;
+    font-size: 2rem;
+}
+
+.cart-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.cart-items {
+    padding: 16px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 16px;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-name {
+    font-weight: 500;
+    color: #333;
+    margin: 0 0 4px;
+}
+
+.item-price {
+    color: #2c974b;
+    font-weight: 500;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.quantity-btn {
+    background: #f0f0f0;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-btn:hover {
+    background: #e0e0e0;
+}
+
+.quantity {
+    font-weight: 500;
+    min-width: 40px;
+    text-align: center;
+}
+
+.remove-btn {
+    color: #ff4444;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    margin-left: 16px;
+}
+
+.cart-summary {
+    background: #f9f9f9;
+    padding: 24px;
+}
+
+.subtotal,
+.delivery,
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #eee;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 16px;
+    background: #2c974b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+.checkout-btn:hover {
+    background: #227a3a;
+}
+
+.empty-cart {
+    text-align: center;
+    padding: 48px 24px;
+    color: #666;
+}
+
+.empty-cart i {
+    font-size: 48px;
+    color: #ccc;
+    margin-bottom: 16px;
+}
+
+/* Footer Navigation */
+.footer-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 12px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    padding: 4px 12px;
+}
+
+.footer-btn.active {
+    color: #2c974b;
+}
+
+.footer-btn i {
+    font-size: 1.2rem;
+}
+
+.footer-btn span {
+    font-size: 0.8rem;
+}
