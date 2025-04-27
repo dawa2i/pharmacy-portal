@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panier - Portail Pharmacie</title>
+    <title>Panier - Pharmacie Portal</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/panier.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -18,17 +18,32 @@
             </div>
             
             <div class="cart-summary">
-                <div class="subtotal">
-                    <span>Sous-total:</span>
-                    <span id="subtotal-amount">0 DA</span>
+                <div class="delivery-info">
+                    <h3>Expédition</h3>
+                    <p>cour de révolution-Annaba</p>
+                    <p>Standard | 30-40 min</p>
                 </div>
-                <div class="delivery">
-                    <span>Livraison:</span>
-                    <span id="delivery-cost">150 DA</span>
+                <div class="payment-method">
+                    <h3>PAYMENT</h3>
+                    <p>main à main</p>
                 </div>
-                <div class="total">
-                    <span>Total:</span>
-                    <span id="total-amount">150 DA</span>
+                <div class="promo-code">
+                    <h3>PROMOS</h3>
+                    <input type="text" placeholder="Entrer votre code PROMO">
+                </div>
+                <div class="totals">
+                    <div class="subtotal">
+                        <span>Total</span>
+                        <span id="subtotal-amount">0 DA</span>
+                    </div>
+                    <div class="delivery">
+                        <span>total livraison</span>
+                        <span id="delivery-cost">150 DA</span>
+                    </div>
+                    <div class="total">
+                        <span>Total à payer</span>
+                        <span id="total-amount">150 DA</span>
+                    </div>
                 </div>
                 <button id="checkout-btn" class="checkout-btn">
                     Placer la commande
@@ -36,20 +51,19 @@
             </div>
         </div>
 
-        <!-- Footer Navigation -->
         <footer class="footer-nav">
-            <button class="footer-btn" onclick="window.location.href='home.html'">
+            <a href="home.html" class="footer-btn">
                 <i class="fas fa-home"></i>
                 <span>Accueil</span>
-            </button>
+            </a>
             <button class="footer-btn">
                 <i class="fas fa-map-marker-alt"></i>
                 <span>Carte</span>
             </button>
-            <button class="footer-btn active">
+            <a href="panier.html" class="footer-btn active">
                 <i class="fas fa-shopping-basket"></i>
                 <span>Panier</span>
-            </button>
+            </a>
             <button class="footer-btn">
                 <i class="fas fa-user"></i>
                 <span>Profil</span>

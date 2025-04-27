@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Médicaments - Pharmacie Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/medicaments.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1 class="page-title">Médicaments</h1>
+
+        <div class="search-container">
+            <input type="text" placeholder="Rechercher un médicament..." id="searchBar">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="medicine-grid">
+            <div class="medicine-card">
+                <img src="images/Amoxicilline1000mg.jpg" alt="Amoxiciline">
+                <div class="medicine-info">
+                    <h3>Amoxiciline</h3>
+                    <p class="price">650 DA</p>
+                    <button class="add-to-cart" onclick="addToCart(1, 'Amoxiciline', 650, 'images/amoxiciline.jpg')">
+                        <i class="fas fa-shopping-cart"></i> Ajouter au panier
+                    </button>
+                </div>
+            </div>
+
+            <div class="medicine-card">
+                <img src="images/creme.jfif" alt="Crème">
+                <div class="medicine-info">
+                    <h3>Crème</h3>
+                    <p class="price">450 DA</p>
+                    <button class="add-to-cart" onclick="addToCart(2, 'Crème', 450, 'images/creme.jpg')">
+                        <i class="fas fa-shopping-cart"></i> Ajouter au panier
+                    </button>
+                </div>
+            </div>
+
+            <div class="medicine-card">
+                <img src="images/metformine.jpg" alt="Metformine">
+                <div class="medicine-info">
+                    <h3>Metformine</h3>
+                    <p class="price">550 DA</p>
+                    <button class="add-to-cart" onclick="addToCart(3, 'Metformine', 550, 'images/metformine.jpg')">
+                        <i class="fas fa-shopping-cart"></i> Ajouter au panier
+                    </button>
+                </div>
+            </div>
+
+            <div class="medicine-card">
+                <img src="images/smecta.jpg" alt="Smecta">
+                <div class="medicine-info">
+                    <h3>Smecta</h3>
+                    <p class="price">350 DA</p>
+                    <button class="add-to-cart" onclick="addToCart(4, 'Smecta', 350, 'images/smecta.jpg')">
+                        <i class="fas fa-shopping-cart"></i> Ajouter au panier
+                    </button>
+                </div>
+            </div>
+
+            <div class="medicine-card">
+                <img src="images/vitd3.jpg" alt="Vitamine D3">
+                <div class="medicine-info">
+                    <h3>Vitamine D3</h3>
+                    <p class="price">890 DA</p>
+                    <button class="add-to-cart" onclick="addToCart(5, 'Vitamine D3', 890, 'images/vitd3.jpg')">
+                        <i class="fas fa-shopping-cart"></i> Ajouter au panier
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer-nav">
+            <a href="home.html" class="footer-btn">
+                <i class="fas fa-home"></i>
+                <span>Accueil</span>
+            </a>
+            <button class="footer-btn">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Carte</span>
+            </button>
+            <a href="panier.html" class="footer-btn">
+                <i class="fas fa-shopping-basket"></i>
+                <span>Panier</span>
+            </a>
+            <button class="footer-btn">
+                <i class="fas fa-user"></i>
+                <span>Profil</span>
+            </button>
+        </footer>
+    </div>
+    <script src="js/medicaments.js"></script>
+</body>
+</html>
